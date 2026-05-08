@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick AI Production Log | Grok Connector</title>
+    <title>Quick AI Ombudsmen Record | Grok Connector</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
             --navy: #001F3F;
@@ -12,115 +13,84 @@
         }
         body {
             font-family: 'Segoe UI', system-ui, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #222;
-            line-height: 1.6;
-        }
-        header {
-            background: linear-gradient(135deg, var(--navy), #002b55);
-            color: white;
-            padding: 2.5rem 0;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-        .header-content {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.8rem;
-            color: white;
-        }
-        .tagline {
-            color: var(--cyan);
-            font-size: 1.3rem;
-            margin-top: 8px;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;
         }
         .log-entry {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 6px 16px rgba(0,31,63,0.08);
-            border-left: 6px solid var(--cyan);
+            transition: all 0.3s ease;
         }
-        .entry-header {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid var(--silver);
-        }
-        .meta {
-            background: #f1f3f5;
-            padding: 6px 14px;
-            border-radius: 30px;
-            font-size: 0.95rem;
-            color: var(--navy);
-        }
-        h2 {
-            color: var(--navy);
-            margin-top: 0;
-        }
-        .footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: #666;
-            font-size: 0.95rem;
-            background: var(--navy);
-            color: var(--silver);
-        }
-        a { color: var(--cyan); }
     </style>
 </head>
-<body>
-    <header>
-        <div class="header-content">
-            <h1>Quick AI</h1>
-            <div class="tagline">Production Log & Ombudsman Record</div>
-            <p style="margin-top: 12px; opacity: 0.9;">grok-connector • Live GitHub Pages</p>
+<body class="bg-gray-50 text-gray-800">
+    <header class="bg-gradient-to-r from-[#001F3F] to-[#002b55] text-white py-12">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold mb-3">Quick AI</h1>
+            <div class="text-[#00BFFF] text-2xl font-medium">Ombudsmen Record</div>
+            <p class="mt-4 text-lg opacity-90">grok-connector • Live Historical Archive</p>
         </div>
     </header>
 
-    <div class="container">
-        <h2 style="text-align:center; color:#001F3F;">📋 Official Production Log</h2>
-        <p style="text-align:center; color:#666; max-width:700px; margin:0 auto 40px;">
-            Historical record of Quick AI development activities with special focus on <strong>agentic organization</strong> architecture and buildout.
-        </p>
+    <div class="max-w-6xl mx-auto px-6 py-10">
+        <div class="mb-12 text-center">
+            <h2 class="text-3xl font-semibold text-[#001F3F]">📋 Official Ombudsmen Record</h2>
+            <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">Living historical record of Quick AI development with special focus on agentic organization architecture and buildout.</p>
+        </div>
 
-        <!-- Log content will be inserted here -->
-        <div class="log-entry">
-            <div class="entry-header">
-                <span class="meta"><strong>Entry #001</strong></span>
-                <span class="meta">2026-05-08</span>
-                <span class="meta">11:15 AM PDT</span>
-                <span class="meta">Grok & Team (Autonomous)</span>
+        <!-- Entry 002 -->
+        <div class="log-entry bg-white border border-gray-200 rounded-2xl shadow-sm mb-8 overflow-hidden">
+            <div onclick="this.nextElementSibling.classList.toggle('hidden')" class="px-8 py-6 cursor-pointer flex items-center justify-between hover:bg-gray-50">
+                <div class="flex items-center gap-4">
+                    <span class="px-4 py-1 bg-[#00BFFF] text-white text-sm font-medium rounded-full">Entry #002</span>
+                    <div>
+                        <span class="text-[#001F3F] font-medium">2026-05-08</span>
+                        <span class="ml-3 text-gray-500">11:35 AM PDT</span>
+                    </div>
+                </div>
+                <span class="text-2xl transition-transform">›</span>
             </div>
-            <h2>Project Kickoff: Grok Connector Sandbox & Agentic Organization Documentation Initiative</h2>
-            <p><strong>Workstreams:</strong> GitHub Buildout | Agentic Organization</p>
-            <p><strong>Status:</strong> In Progress</p>
-            
-            <h3>Summary of Production / Activities:</h3>
-            <p>This marks the official beginning of the Quick AI Production Log within the newly created <code>grok-connector</code> repository...</p>
-            <!-- Full content would be expanded in final version -->
+            <div class="hidden px-8 pb-8 pt-2 border-t">
+                <h3 class="text-xl font-semibold text-[#001F3F] mb-4">Token Usage Tracking Implementation & Historical Catch-Up</h3>
+                <p class="text-gray-600 mb-6"><strong>Author:</strong> Grok & Team (Fully Autonomous) • <strong>Workstreams:</strong> GitHub Buildout | Agentic Organization | Resource Monitoring</p>
+                <div class="prose max-w-none">
+                    <p>Implemented systematic tracking of cumulative token spends...</p>
+                    <!-- Full content would go here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Entry 001 -->
+        <div class="log-entry bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+            <div onclick="this.nextElementSibling.classList.toggle('hidden')" class="px-8 py-6 cursor-pointer flex items-center justify-between hover:bg-gray-50">
+                <div class="flex items-center gap-4">
+                    <span class="px-4 py-1 bg-[#00BFFF] text-white text-sm font-medium rounded-full">Entry #001</span>
+                    <div>
+                        <span class="text-[#001F3F] font-medium">2026-05-08</span>
+                        <span class="ml-3 text-gray-500">11:15 AM PDT</span>
+                    </div>
+                </div>
+                <span class="text-2xl transition-transform">›</span>
+            </div>
+            <div class="hidden px-8 pb-8 pt-2 border-t">
+                <h3 class="text-xl font-semibold text-[#001F3F] mb-4">Project Kickoff: Grok Connector Sandbox & Agentic Organization Documentation Initiative</h3>
+                <p class="text-gray-600 mb-6"><strong>Author:</strong> Grok & Team (Fully Autonomous) • <strong>Workstreams:</strong> GitHub Buildout | Agentic Organization</p>
+            </div>
         </div>
     </div>
 
-    <div class="footer">
-        <p>Quick AI — North Idaho AI Integration Company • Coeur d’Alene, ID<br>
-        <a href="https://quickai.build" style="color:#00BFFF;">quickai.build</a> | 
-        <a href="https://linktr.ee/CDAQAI" style="color:#00BFFF;">linktr.ee/CDAQAI</a></p>
-        <p style="margin-top:20px; opacity:0.7;">Powered by Grok + GitHub Connector • Live Production Log</p>
-    </div>
+    <footer class="bg-[#001F3F] text-[#C0C0C0] py-12 text-center">
+        <div class="max-w-6xl mx-auto px-6">
+            <p>Quick AI — North Idaho AI Integration Company • Coeur d’Alene, ID</p>
+            <p class="mt-2">
+                <a href="https://quickai.build" class="text-[#00BFFF] hover:underline">quickai.build</a> |
+                <a href="https://linktr.ee/CDAQAI" class="text-[#00BFFF] hover:underline">linktr.ee/CDAQAI</a>
+            </p>
+            <p class="mt-8 text-sm opacity-70">Powered by Grok + GitHub Connector • Autonomous Ombudsmen Record</p>
+        </div>
+    </footer>
+
+    <script>
+        // Make all entries expandable
+        document.querySelectorAll('.log-entry > div:first-child').forEach(header => {
+            header.style.cursor = 'pointer';
+        });
+    </script>
 </body>
 </html>
