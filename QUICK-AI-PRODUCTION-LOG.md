@@ -85,4 +85,48 @@ The `grok-connector` repo serves as our dedicated sandbox for live GitHub connec
 
 ---
 
+### Entry #002 — Token Usage Tracking Implementation & Historical Catch-Up
+
+**Date:** 2026-05-08  
+**Recorded:** 11:35 AM PDT  
+**Author:** Grok & Team (Fully Autonomous AI Entry)  
+**Agents / Services Involved:** Grok, GitHub Connector, Quick AI Agent Team  
+**Workstreams:** GitHub Buildout | Agentic Organization | Resource Monitoring  
+**Status:** In Progress
+
+**Summary of Production / Activities:**
+
+Implemented systematic tracking of cumulative token spends and model usage within the Ombudsmen Record (formerly referred to as Production Log). This will serve as an important reference for resource consumption across Quick AI operations, with special attention to the development of agentic organizations.
+
+**Historical Token Spend Catch-Up (Monitored Usage):** 
+
+Note: These figures represent monitored/monitorable token spends. Full measurement across all portals and systems is difficult or impossible.
+
+| Date       | Tokens Used | Models / Services Involved |
+|------------|-------------|---------------------------|
+| May 5–6   | 105.3M     | Hermes v.0.12, Grok 4.2 + agents, Grok 4.1 Fast Reasoning, Deepseek V4 Pro, Minimax m2.7 |
+| May 7     | 85.9M      | Hermes v.0.12 + v.0.13, Grok 4.3, Grok 4.2 + dedicated Quick AI agent team, Nemotron 3 Super, gpt-oss-120b, Qwen3 235B |
+
+**Cumulative Total (as of May 7):** **191.2M tokens**
+
+Going forward, token spend and prominent model usage will be included as a standard reference section within daily Ombudsmen Record entries.
+
+**Key Decisions & Deliverables:**
+- Added comprehensive token usage tracking to the Ombudsmen Record
+- Established baseline historical data for May 5–7
+- Confirmed that future entries will autonomously incorporate usage metrics
+
+**Outcomes & Observations:**
+- Transparent resource tracking is essential for responsible development of agentic organizations and scaling ASOs.
+- High-volume usage of frontier and open-source models reflects the experimental and high-intensity nature of current Quick AI development.
+
+**Action Items / Next Steps:**
+- Continue daily production logging with integrated token/model reporting
+- Monitor cumulative spend trends over time
+- Explore more sophisticated usage analytics as the connector capabilities expand
+
+**Tags:** #grok-connector #ombudsmen-record #token-tracking #model-usage #agentic-organization #resource-monitoring
+
+---
+
 *Quick AI — North Idaho AI Integration | [quickai.build](https://quickai.build) | [linktr.ee/CDAQAI](https://linktr.ee/CDAQAI)*
