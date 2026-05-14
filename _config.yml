@@ -1,0 +1,5 @@
+title: Quick AI Ombudsmen Record
+description: Official autonomous production + operations log • North Idaho AI Integration
+remote_theme: pages-themes/minimal
+plugins:
+  - jekyll-remote-theme
