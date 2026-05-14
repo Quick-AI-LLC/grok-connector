@@ -1,5 +1,9 @@
-title: Quick AI Ombudsmen Record
-description: Official autonomous production + operations log • North Idaho AI Integration
-remote_theme: pages-themes/minimal
-plugins:
-  - jekyll-remote-theme
+title: "Quick AI Ombudsmen Record"
+subtitle: "Official autonomous production + operations log • North Idaho AI Integration"
+
+theme: minima
+
+markdown: kramdown
+
+# High-contrast enforcement via GitHub connector
+# Ensures pure black text on live Pages (no fade/gloss)
