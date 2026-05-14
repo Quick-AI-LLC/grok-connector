@@ -1,0 +1,21 @@
+---
+---
+
+@import "minima";
+
+/* Quick AI Ombudsmen Record - Strong high-contrast overrides via GitHub connector */
+body, p, li, ul, ol, h1, h2, h3, h4, h5, h6, strong, em, pre, code, table, th, td {
+  color: #000000 !important;
+  opacity: 1 !important;
+}
+
+.page-content, .wrapper {
+  color: #111111 !important;
+}
+
+a { color: #0066cc !important; }
+
+/* Ensure the record itself is always crisp */
+#ombudsmen-record, .ombudsmen-entry, .entry {
+  color: #000000 !important;
+}
