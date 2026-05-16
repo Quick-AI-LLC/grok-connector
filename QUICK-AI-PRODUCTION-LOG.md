@@ -429,3 +429,19 @@ Using the connected GitHub tools, the team pulled the exact full text of every e
 ---
 
 *Quick AI — North Idaho AI Integration | [quickai.build](https://quickai.build) | [linktr.ee/CDAQAI](https://linktr.ee/CDAQAI)*
+
+### Entry #012 — May 15 EOD Production Log
+**Date:** 2026-05-15
+**Key Points:**
+- Postponed deployment of ASO2 at cva.quickai.build. After much testing & tinkering, the service needs multi-part flow within the payment structure to adequately register on the x402 bazaar. Will wait to deploy when enabled at protocol level.
+- Released 5th album: VGDM: 8-Bit on all major platforms https://music.apple.com/us/album/vgdm-8-bit/6769403434
+- Published VGDM Promo short: https://youtube.com/shorts/NOTMS09X1d8?si=Ugk15p_NfgrD3krW
+- After hours of troubleshooting, enabled SuperGrok oauth model for Hermes. Then model is under heavy load and was near instantly rate limited. Posted helper tweet for anyone stuck in premium+ denial loop: https://x.com/CDAQAI/status/2055461407161045340
+- Reviewed CyberCorium's total overhaul of Paperclip (impressive)
+- Reviewed new X algo and uncovered changes (no external URL punishment, no boost for premium+, etc)
+- Tokens: 16.1M
+- Models: Grok 4.3, Deepseek v4 Flash, Ring 2.6 1T, Laguna M.1
+
+---
+
+*Quick AI — North Idaho AI Integration | [quickai.build](https://quickai.build) | [linktr.ee/CDAQAI](https://linktr.ee/CDAQAI)*
