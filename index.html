@@ -6,33 +6,26 @@
     <title>Quick AI Ombudsmen Record</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
-        :root {
-            --primary: #00ff9d;
-        }
         body {
             font-family: 'Inter', system_ui, sans-serif;
         }
         .heading-font {
             font-family: 'Space Grotesk', sans-serif;
         }
-        .entry-card {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        .prose h3 {
+            color: #67e8f9;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
         }
-        .entry-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 20px 25px -5px rgb(0 255 157 / 0.1);
+        .prose ul, .prose ol {
+            margin-left: 1.5rem;
         }
-        details {
-            transition: all 0.3s ease;
-        }
-        summary {
-            cursor: pointer;
-            list-style: none;
-        }
-        summary::-webkit-details-marker {
-            display: none;
+        .prose strong {
+            color: #67e8f9;
         }
     </style>
 </head>
@@ -69,84 +62,16 @@
                 <p class="text-zinc-500 text-sm mt-2">For clean handoff between human and AI team members.</p>
             </div>
 
-            <!-- Record Entries -->
+            <!-- Dynamic Production Log -->
             <h2 class="text-3xl font-semibold mb-8 flex items-center gap-x-3">
                 <span class="text-emerald-400">📜</span> Production Log Entries
             </h2>
-
-            <!-- Entry 010 -->
-            <details class="entry-card bg-zinc-900 border border-zinc-800 rounded-3xl p-8 mb-8 open">
-                <summary class="flex justify-between items-start cursor-pointer">
-                    <div>
-                        <span class="px-3 py-1 bg-emerald-900 text-emerald-400 text-xs font-mono rounded-2xl">#010</span>
-                        <span class="ml-3 text-zinc-500">May 14, 2026</span>
-                    </div>
-                    <span class="text-xs px-4 py-1.5 bg-zinc-800 text-zinc-400 rounded-3xl">Permanent Static Site Deploy</span>
-                </summary>
-                <div class="mt-6 space-y-4 text-zinc-300">
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li>Permanent GitHub Pages static index.html deployed with native expandable entries</li>
-                        <li>Fixed entry count (now shows all 3+ entries) and made every entry fully clickable/expandable</li>
-                        <li>Abandoned Jekyll permanently per user preference — pure static for reliability</li>
-                        <li>Quick AI GitHub connector buildout continues: full x402 services, music distro, agentic orgs</li>
-                    </ul>
-                    <div class="pt-6 border-t border-zinc-800 flex justify-between text-sm">
-                        <div><span class="text-zinc-500">Tokens:</span> <span class="font-medium">Current build</span></div>
-                        <div><span class="text-zinc-500">Models:</span> <span class="font-medium">Grok 4 series + agents</span></div>
-                    </div>
+            <div id="log-content" class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 min-h-[200px]">
+                <div class="flex items-center justify-center h-40">
+                    <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-emerald-400"></div>
+                    <span class="ml-3 text-zinc-400">Loading full historical record...</span>
                 </div>
-            </details>
-
-            <!-- Entry 009 -->
-            <details class="entry-card bg-zinc-900 border border-zinc-800 rounded-3xl p-8 mb-8">
-                <summary class="flex justify-between items-start cursor-pointer">
-                    <div>
-                        <span class="px-3 py-1 bg-emerald-900 text-emerald-400 text-xs font-mono rounded-2xl">#009</span>
-                        <span class="ml-3 text-zinc-500">May 13, 2026</span>
-                    </div>
-                    <span class="text-xs px-4 py-1.5 bg-zinc-800 text-zinc-400 rounded-3xl">EOD Log</span>
-                </summary>
-                <div class="mt-6 space-y-4 text-zinc-300">
-                    <ol class="list-decimal pl-5 space-y-2">
-                        <li>Collaborated with Jeff from CyberCorium LLC on local model research & testing</li>
-                        <li>Completed VGDM: 8-bit YT stream and scheduled for Friday release to coincide with album</li>
-                        <li>Reworked & ran crypto tooling</li>
-                        <li>Explored new Claude hosted plans with boost & their batch APIs</li>
-                        <li>Hermes maintenance (clearing old sessions/caches, checking configs, etc)</li>
-                    </ol>
-                    <div class="pt-6 border-t border-zinc-800 flex justify-between text-sm">
-                        <div><span class="text-zinc-500">Tokens:</span> <span class="font-medium">40.3M</span></div>
-                        <div><span class="text-zinc-500">Models:</span> <span class="font-medium">Laguna XS.2, OSS-120B, Grok 4.3, Grok 4.2 + agents</span></div>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Entry 008 -->
-            <details class="entry-card bg-zinc-900 border border-zinc-800 rounded-3xl p-8 mb-8">
-                <summary class="flex justify-between items-start cursor-pointer">
-                    <div>
-                        <span class="px-3 py-1 bg-emerald-900 text-emerald-400 text-xs font-mono rounded-2xl">#008</span>
-                        <span class="ml-3 text-zinc-500">May 12, 2026</span>
-                    </div>
-                    <span class="text-xs px-4 py-1.5 bg-zinc-800 text-zinc-400 rounded-3xl">EOD Log</span>
-                </summary>
-                <div class="mt-6 space-y-4 text-zinc-300">
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li>Went through X false flagging event</li>
-                        <li>Pushed next album (VGDM: 8-bit) for distribution, releases Friday May 15</li>
-                        <li>Released HexGrid Phonk full album stream on YT</li>
-                        <li>3 total Ombudsmen entries today</li>
-                        <li>Pushed FOSS X Ad Buyer skill to GitHub</li>
-                        <li>Compiled weekly analytics tracker: 64% growth</li>
-                        <li>Built reverse proxy experiments</li>
-                        <li>Updated Grok with new slash skills</li>
-                    </ul>
-                    <div class="pt-6 border-t border-zinc-800 flex justify-between text-sm">
-                        <div><span class="text-zinc-500">Tokens:</span> <span class="font-medium">62.5M</span></div>
-                        <div><span class="text-zinc-500">Models:</span> <span class="font-medium">Grok 4.3, 4.2 + agents + more</span></div>
-                    </div>
-                </div>
-            </details>
+            </div>
         </div>
 
         <footer class="mt-16 text-center text-zinc-500 text-sm">
@@ -163,8 +88,34 @@
 
     <script>
         document.documentElement.setAttribute('data-theme', 'dark');
-        // Auto-open latest entry
-        document.querySelector('details').open = true;
+        
+        // Fetch and render the full Ombudsmen Record from Markdown
+        async function loadOmbudsmenRecord() {
+            try {
+                const response = await fetch('https://raw.githubusercontent.com/Quick-AI-LLC/grok-connector/main/QUICK-AI-PRODUCTION-LOG.md');
+                const md = await response.text();
+                const html = marked.parse(md);
+                document.getElementById('log-content').innerHTML = html;
+                
+                // Optional: Add some interactivity to entry headers
+                const h3s = document.querySelectorAll('#log-content h3');
+                h3s.forEach(h3 => {
+                    h3.style.cursor = 'pointer';
+                    h3.addEventListener('click', () => {
+                        const next = h3.nextElementSibling;
+                        if (next && next.tagName === 'P') {
+                            next.style.display = next.style.display === 'none' ? '' : 'none';
+                        }
+                    });
+                });
+            } catch (error) {
+                document.getElementById('log-content').innerHTML = 
+                    '<p class="text-red-400">Error loading record. Please refresh or check the raw Markdown link above.</p>';
+                console.error('Failed to load Ombudsmen Record:', error);
+            }
+        }
+        
+        loadOmbudsmenRecord();
     </script>
 </body>
-</html> 
+</html>
